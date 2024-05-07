@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 1rem/1.5 "Roboto Condensed", sans-serif;
+    margin: 0;
+    background-color: #0f172a;
+    padding: 0.5rem;
+}
+
+#tittle-h1 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 3rem;
+    color: #e5e7eb;
+    text-align: center;
+}
+
+#home {
+    text-decoration: none;
+}
+
+#span {
+    color: #60a5fa;
+}
+
+#main-container {
+    background-color: #1e293b;
+    margin: 1.5rem auto;
+    max-width: 35rem;
+    min-width: 15rem;
+    max-height: 20rem;
+    position: relative;
+    border-radius: 0.5rem;
+}
+
+#div-container {
+    margin: 1.5rem auto;
+}
+
+#input-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#container-tb{
+    overflow: auto;
+    height: 10rem;
+}
+#input {
+    width: 100%;
+    border-radius: 0.3rem;
+    margin: 0.5rem 0;
+}
+
+#link {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#link > img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+
+#messege-p {
+    margin: 0.5rem;
+    font-size: small;
+    color: #c0233f;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+#list {
+    list-style-type: none;
+    padding: 0;
+}
+.cell {
+    overflow: hidden; /* Oculta el texto que se desborda */
+    word-wrap: break-word; /* Permite que el texto se divida en múltiples líneas si es necesario */
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(127, 127, 127);
+}
+
+.X,
+.Check {
+    flex: 0 0 auto;
+    padding: 0;
+    height: 100%;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.X > img,
+.Check > img {
+    width: 3rem;
+    height: 100%;
+    padding: 0;
+}
+
+.X:hover {
+    background-color: red;
+}
+
+.Check:hover {
+    background-color: green;
+}
+
+#contadores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.3rem;
+    padding: 0.5rem;
+}
+
+#total-p,
+#completed-p,
+#incompleted-p {
+    border-radius: 0.2rem;
+    margin: 0.3rem;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+
+#total-p {
+    background-color: #6d28d9;
+}
+
+#completed-p {
+    background-color: #22c55e;
+}
+
+#incompleted-p {
+    background-color: #f43f5e;
+}
+
+@media (min-width: 768px) {
+    #tittle-h1 {
+        font-size: 5rem;
+    }
+    #main-container {
+        font-size: 1.5rem;
+    }
+}

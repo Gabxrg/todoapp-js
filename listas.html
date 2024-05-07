@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/listas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Todo App</title>
+</head>
+<body id="body">
+    <h1 id="tittle-h1"><a id="home" href="index.html">Todo <span id="span">App</span></a></h1>
+    <main id="main-container">
+        <div id="div-container">
+            <div id="input-div">
+                <input id="input" type="text" placeholder="Create some task">
+                <button id="link"><img src="media/add.purple.svg" alt=""></button>
+            </div>
+            <p id="messege-p"> <b>task must be provided</b></p>
+            <div id="container-tb">
+            <div id="table">
+                <ul id="list">
+                    <!-- La plantilla de fila -->
+                    <li class="row" id="base" style="display: none;">
+                        <button class="X"><img src="media/X blanca.svg" alt=""></button>
+                        <div class="cell">Tareas</div>
+                        <button class="Check"><img src="media/check verde.svg" alt=""></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+            <div id="contadores">
+                <p id="total-p">Total:10</p>
+                <p id="completed-p">Completed:3</p>
+                <p id="incompleted-p">Incompeted:2</p>
+            </div>
+        </div>
+        <script src="listas.js"></script>
+    </main>
+</body>
+</html>
